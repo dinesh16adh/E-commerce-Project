@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AR online store</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <!-- Your HTML content, header, and other sections -->
+  <!-- Header -->
+    <header>
+        <div class="logo"><a href="#">AR online store</a></div>
+        <div class="menu">
+            <a href="#">
+                <ion-icon name="close" class="close"></ion-icon>
+            </a>
+            <ul>
+                <li><a href="#" class="under">HOME</a></li>
+                <li><a href="#" class="under">SHOP</a></li>
+                <li><a href="#" class="under">OUR PRODUCTS</a></li>
+                <li><a href="#" class="under">CONTACT US</a></li>
+                <li><a href="#" class="under">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <a href=""><input type="text" placeholder="search products" id="input">
+                <ion-icon class="s" name="search"></ion-icon>
+            </a>
+        </div>
+        <div class="heading">
+            <ul>
+                <li><a href="#" class="under">HOME</a></li>
+                <li><a href="#" class="under">SHOP</a></li>
+                <li><a href="#" class="under">OUR PRODUCTS</a></li>
+                <li><a href="#" class="under">CONTACT US</a></li>
+                <li><a href="#" class="under">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="heading1">
+            <ion-icon name="menu" class="ham"></ion-icon>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+  
+    <!-- Main Content -->
+    <!-- <section> -->
+        <div class="section">
+            <div class="section1">
+                <!-- Image Slider -->
+                <div class="img-slider">
+                    <img src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="" class="img">
+                    <img src="https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="" class="img">
+                    <img src="https://images.pexels.com/photos/2292953/pexels-photo-2292953.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        alt="" class="img">
+                    <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="" class="img">
+                    <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="" class="img">
+                </div>
+            </div>
+    <section>
+        <div class="section2">
+            <!-- Product Items -->
+            <div class="items">
+                <div class="img img1"><img
+                        src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt=""></div>
+                <div class="name">SHOES</div>
+                <div class="price">Rs 1500 </div>
+                <div class="info"></div>
+                <div class="actions">
+                    <button class="purchase-btn" onclick="purchase('item1')">Purchase</button>
+                    <button class="cart-btn" onclick="openCartWindow()">Add to Cart</button>
+                    <button class="AR-btn" onclick="showAR('item1')">View in AR</button>
+                </div>
+            </div>
+
+            <!-- Add more product items as needed -->
+            <!-- Repeat the following block for each product -->
+            <div class="items">
+                <div class="img img2"><img
+                        src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt=""></div>
+                <div class="name">MEN's T-SHIRT</div>
+                <div class="price">RS 1200</div>
+                <div class="info"></div>
+                <div class="actions">
+                    <button class="purchase-btn" onclick="purchase('item2')">Purchase</button>
+                    <button class="cart-btn" onclick="openCartWindow()">Add to Cart</button>
+                    <button class="AR-btn" onclick="showAR('item2')">View in AR</button>
+                </div>
+            </div>
+          
+          <div class="items">
+                      <div class="img img1"><img src="https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+                      <div class="name">WATCH</div>
+                      <div class="price">RS 2500</div>
+                      <div class="info"></div>
+                      <div class="actions">
+                        <button class="purchase-btn" onclick="purchase('item3')">Purchase</button>
+                        <button class="cart-btn" onclick="openCartWindow()">Add to Cart</button>
+                        <button class="AR-btn" onclick="showAR('item3')">View in AR</button>
+                      </div>
+                    </div>
+                    <div class="items">
+                      <div class="img img1"><img src="https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <div class="name">SMART PHONE</div>
+              <div class="price">RS 30000</div>
+              <div class="info"></div>
+              <div class="actions">
+                <button class="purchase-btn" onclick="purchase('item4')">Purchase</button>
+                <button class="cart-btn" onclick="openCartWindow()">Add to Cart</button>
+                <button class="AR-btn" onclick="showAR('item4')">View in AR</button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <div class="name">TELEVISION</div>
+              <div class="price">RS 65000</div>
+              <div class="info"></div>
+              <div class="actions">
+                <button class="purchase-btn" onclick="purchase('item5')">Purchase</button>
+                <button class="cart-btn" onclick="openCartWindow()">Add to Cart</button>
+                <button class="AR-btn" onclick="showAR('item5')">View in AR</button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+              <div class="name">HOODIES</div>
+              <div class="price">RS 2000</div>
+              <div class="info"></div>
+              <div class="actions">
+                <button class="purchase-btn" onclick="purchase('item6')">Purchase</button>
+                <button class="cart-btn" onclick="openCartWindow()">Add to Cart</button>
+                <button class="AR-btn" onclick="showAR('item6')">View in AR</button>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+              <div class="name">BLANKETS</div>
+              <div class="price">RS 6000 </div>
+              <div class="info"></div>
+              <div class="actions">
+                <button class="purchase-btn" onclick="purchase('item7')">Purchase</button>
+                <button class="cart-btn" onclick="openCartWindow()">Add to Cart</button>
+                <button class="AR-btn" onclick="showAR('item7')">View in AR</button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+              <div class="name">LAPTOP</div>
+              <div class="price">RS 150000 </div>
+              <div class="info"></div>
+              <div class="actions">
+                <button class="purchase-btn" onclick="purchase('item8')">Purchase</button>
+                <button class="cart-btn" onclick="openCartWindow()">Add to Cart</button>
+                <button class="AR-btn" onclick="showAR('item8')">View in AR</button>
+          
+            <!-- End of product block -->
+              </div>
+          </div>
+            <!-- Repeat the above block for each product -->
+        </div>
+    </section> 
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <div id="cartItems"></div>
+        </div>
+    </div>
+    
+          <footer>
+        <div class="footer0">
+            <h1>AR online store</h1>
+        </div>
+        <div class="footer1 ">
+            <div class="social-media">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="product">
+                <div class="heading">Products</div>
+                <div class="div">Sell your Products</div>
+                <div class="div">Advertise</div>
+                <div class="div">Pricing</div>
+                <div class="div">Product Business</div>
+            </div>
+            <div class="services">
+                <div class="heading">Services</div>
+                <div class="div">Return</div>
+                <div class="div">Cash Back</div>
+                <div class="div">Affiliate Marketing</div>
+                <div class="div">Others</div>
+            </div>
+            <div class="Company">
+                <div class="heading">Company</div>
+                <div class="div">Complaint</div>
+                <div class="div">Careers</div>
+                <div class="div">Affiliate Marketing</div>
+                <div class="div">Support</div>
+            </div>
+            <div class="Get Help">
+                <div class="heading">Get Help</div>
+                <div class="div">Help Center</div>
+                <div class="div">Privacy Policy</div>
+                <div class="div">Terms</div>
+                <div class="div">Login</div>
+            </div>
+        </div>
+        <div class="footer3"> © <h4>AR online store </h4> 2024</div>
+    </footer>
+
+    <!-- Your HTML content, footer, etc. -->
+
+</body>
+
+</html>
